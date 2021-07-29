@@ -1,0 +1,337 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: rgb(91, 113, 139);
+}
+#nav-btns{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    line-height: 3rem;
+    background-color: rgb(52, 86, 117);
+    padding: 3rem ;
+    /* display: n; */
+    border-radius: 1rem;
+    box-shadow: 1px 1px 17px 2px rgb(55, 87, 117);
+    position: sticky;
+    top: 0% ;
+}
+#nav-btns img{
+    width: 30rem;
+    border:10px solid rgb(186, 236, 127);
+    text-align: center;
+    margin: 0% auto;
+    margin-bottom: 3.5rem;
+}
+.hero-name{
+text-align: center;
+color: rgb(186, 236, 127);
+font-size: 5rem;
+}
+.hero-para{
+    color: rgb(149, 187, 124);
+    text-align: center;
+    margin-top:1.2rem ;
+    font-size: 2rem;
+}
+#nav-btns button{
+    font-size: 2rem;
+    margin: 0.8rem 0;
+    padding: 1rem;
+    border: 1px solid rgba(202, 219, 202, 0.425);
+    border-radius: 10rem;
+    color: honeydew;
+    box-shadow: 1px 1px 7px 2px rgb(42, 96, 146);
+    background-color: rgba(125, 139, 218, 0.137);
+}
+#nav-btns button:hover{
+    background-color: rgba(125, 139, 218, 0.856);
+    color: black;box-shadow: 1px 1px 7px 2px rgb(51, 131, 206);
+}
+#nav-btns button.active{
+    background-color: rgb(186, 236, 127);
+    color: brown;
+    font-weight: bold;
+}
+.right-cont{
+    width: 100rem;
+    margin: 0% auto;
+    box-shadow:1px 1px 7px 7px rgba(63, 114, 161, 0.699);
+    background-color: #fff;
+    min-height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: rgb(52, 86, 117)
+}
+.right-cont h2{
+    font-size: 3.3rem;
+    color: rgb(186, 236, 127);
+    margin-bottom: 2rem;
+}
+.right-cont h1{
+    font-size: 4rem;
+    color: ivory;
+    /* margin-bottom: 1rem; */
+}
+.right-cont p{
+    color: ivory;
+    font-size: 2rem;
+    color: khaki;
+    margin-bottom: 3rem;
+}
+.right-cont h1 span{
+    color: rgb(139, 224, 42);
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px rgb(235, 114, 114);
+}
+.right-cont h1 span:hover{
+    color:rgb(160, 243, 65);
+    cursor: pointer;
+}
+.img-box{
+    box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.582);
+    margin-bottom: 4rem;
+    width: 50rem;
+    height: 50rem;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+.right-cont img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.right-cont img:hover{
+    transform: scale(1.1);
+}
+.right-cont a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    border-radius: 7rem;
+    transition: all 0.5s ease-in-out;
+}
+.right-cont a:hover{
+    background-color: rgb(160, 243, 65);
+    color: brown;
+    border-color: brown;
+    box-shadow:1px 1px 12px rgba(40, 48, 53, 0.616) ;
+}
+.right-cont .social-icons a{
+    border:1px solid rgb(79, 185, 29) !important;
+}
+.right-cont .social-icons a:hover{
+    
+    background-color: rgb(213, 252, 196);
+}
+.right-cont .social-icons a i{
+    color: rgb(160, 243, 65);
+}
+.right-cont .social-icons a:hover i{
+    color: rgb(51, 131, 206);
+}
+.profile{
+    padding: 4rem 8rem;
+    text-align: justify;
+}
+.profile h2{
+    /* padding: 4rem; */
+    font-size: 3rem;
+    color: yellow;
+    position: relative;
+    /* margin-bottom: ; */
+}
+.profile h2::after{
+    content: "";
+    background-color: #fff;
+    width: 10%;
+    height: 2px;
+    left: 0%;
+    top: 120%;
+    position: absolute;
+}
+.profile h1{
+    margin: 2rem 0;
+}
+.right-cont .profile p{
+    /* padding: 4rem; */
+    color: rgb(232, 238, 216) !important;
+}
+.profile .skill{
+    padding: 4rem;
+    /* font-size: 2rem; */
+    background-color: rgb(158, 190, 121);
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    box-shadow:1px 1px 12px rgba(159, 160, 77, 0.555) ;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.profile .skill:hover{
+    transform: translateY(-1rem);
+    background-color: rgb(230, 224, 136);
+}
+.profile .skill h4{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.profile .skill .progress {
+    height: 2rem;
+    border-radius: 2rem;
+}
+.img-box-port{
+    overflow: hidden;
+    box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.541);
+    border-radius: 1.2rem;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.img-box-port img{
+    width: 100%;    
+    height: 30rem;
+}
+.img-box-port h5{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+.img-box-port .overflow{
+    background-color: rgba(155, 127, 50, 0.637);
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+.img-box-port .overflow a{
+    background-color: teal;
+    box-shadow:1px 1px 12px rgb(51, 124, 173) ;
+    margin-top: 3rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+.img-box-port .overflow a:hover{
+    box-shadow:1px 1px 12px rgb(51, 124, 173) ;
+    border-color: teal;
+}
+.img-box-port:hover .overflow
+{
+    top: 0%;
+}
+
+/* .Eduacation .col{
+    position: relative;
+    top: 0%;
+    left: 0%;
+} */
+
+.Eduacation .eduacation-box-port{
+    position: relative;
+    left: 0%;
+    top: 0%;
+    padding: 2rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 7px 0px rgba(26, 26, 26, 0.623);
+
+}
+.Eduacation .eduacation-box-port::before{
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: 4.9rem;
+    top: 0%;
+    left: 0%;
+    width: 2rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.Eduacation .eduacation-box-port::after{
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    margin-top: 4.9rem;
+    top: 0%;
+    left: 0%;
+    width: 2px;
+    height: 3rem;
+    height: 70%;
+}
+.Eduacation .eduacation-box-port h4{
+    color: rgb(136, 77, 0);
+    background-color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 3rem;
+    border: 1px solid green;
+}
+.Eduacation .eduacation-box-port h2{
+    font-size: 2rem;
+}
+.Eduacation .eduacation-box-port p{
+    font-size: 1.6rem;
+}
+.Eduacation .eduacation-box-port:hover{
+    transform: translateY(-10px);
+    /* background-color: rgba(80, 138, 192, 0.733); */
+    box-shadow: 2px 2px 7px 0px rgba(2, 2, 2, 0.664);
+
+}
+.contact form label{
+    line-height: 3rem;
+    font-size: 1.6rem;
+    
+}
+ .contact form input[type="text"],form input[type="email"]{
+    font-size: 1.6rem;
+   height: 100%; 
+}
+.contact form textarea{
+    height: 100%;font-size: 1.6rem;
+}
+.contact form .form-floating{
+    /* background-color: red; */
+    height: 10px;
+    height: 6rem;
+}
+.contact form button{
+    background-color: transparent;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 20%;
+    border-color: yellow;
+    color: yellow;
+}
+.contact form button:hover{
+    background-color: rgb(162, 179, 88);
+    border-color: black;
+    color: black;
+}
